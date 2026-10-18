@@ -1,0 +1,25 @@
+import Product from './Product'
+
+function ProductList() {
+  // Static data
+  const products = [
+    { id: 1, title: "Laptop", price: 1200 },
+    { id: 2, title: "Phone", price: 800 },
+    { id: 3, title: "Tablet", price: 600 }
+  ];
+
+  return (
+    <div>
+      <h3>Product List</h3>
+      {products.map((product) => (
+        <Product 
+          key={product.id} 
+          title={product.title} 
+          price={product.price} 
+        />
+      ))}
+    </div>
+  )
+}
+
+export default ProductList
