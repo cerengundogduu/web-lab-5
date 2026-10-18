@@ -1,3 +1,5 @@
+
+// Layout wrapper component
 function Card({ children }) {
   // Writing the styles directly inside, simple and clean.
   const cardStyle = {
